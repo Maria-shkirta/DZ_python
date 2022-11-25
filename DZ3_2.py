@@ -7,20 +7,11 @@
 
 a=[2,3,4,5,6]
 
-# i=0
-# while i<length:
-#     b[i]=a[i]*a[length-1-i]
-#     i=i+1
-# print(b)
-
-
-
 if len(a)%2!=0:
-    length=len(a)/2+1
+    length=len(a)//2+1
 else:
-    length=len(a)/2
-    b=[a[i]*a[len(a)-i-1] for i in range(length)]
-    print(b)
+    length=len(a)//2
 
-
+b=[a[i]*a[len(a)-i-1] for i in range(length)]
+print(b)
 
